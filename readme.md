@@ -1,7 +1,7 @@
 YMmd Blog
 ===================================
-Blog YMmd is a blog system based on php-markdown, it can use markdown syntax to create your own blog by a very easy way. It's advantage is extremely lightweight (only 200KB) and needn't configuration. Just upload it to your virtual host, you can start use it.
+Blog YMmd is a blog system based on php-markdown, it can use markdown syntax to create your own blog by a very easy way. It's advantage is very lightweight (only 200KB) and needn't config. Just upload it to your virtual host, you can start use it.
 
 Present situation
 -----------------------------------
-We package php-markdown once, you can use hyperlinks to call the php-markdown interface function, then you can achieve the blog home page. At present we are writing the part of that according to the MD file in the catalog automatic generation of home page.
+At present we are writing the part of that automatic generation home page according to the MD files in the catalog. And the page is used to upload MD files 
