@@ -1,5 +1,4 @@
 <?php
-//例子里带的玩意应该基本是没用了
 /*spl_autoload_register(//注册autoload，自动包含类
 	function($class)
 	{require preg_replace('{\\\\|_(?!.*\\\\)}', DIRECTORY_SEPARATOR, ltrim($class, '\\')).'.php';}
