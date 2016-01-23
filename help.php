@@ -9,3 +9,21 @@ function ValidaPassword($password)
 	if($contents!==$password)
 	{exit('Password error');}
 }
+
+function CheckLogin()
+{
+	if(!isset($_SESSION['userid']))
+	{
+		header("Location:login.html");  
+		exit();
+	}
+}
+
+//在上传和主页生成界面里都有登出按钮
+function LoginOut()
+{
+	unset($_SESSION['userid']);
+    unset($_SESSION['password']); 
+    echo '注销登录成功';  
+    exit;
+}

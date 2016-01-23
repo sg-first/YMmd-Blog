@@ -2,8 +2,7 @@
 require_once dirname(__FILE__).'/lib.php'
 require_once dirname(__FILE__).'/help.php'
 
-//读取密码的写这里，下面用$password代表用户输入的密码
-ValidaPassword($password);
+CheckLogin();
 //开始把所有markdown生成HTML
 $mydir = dir(dirname(__FILE__));
 while($file = $mydir->read())
