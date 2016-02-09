@@ -55,30 +55,30 @@ function upload()
 	{
 		if ($_FILES["file"]["error"] > 0)
 		{
-			alert("ÎÄ¼ş´íÎó");
+			alert("æ–‡ä»¶é”™è¯¯");
 		} 
 		else 
 		{
 			if (file_exists("upload/" . $_FILES["file"]["name"])) 
 			{
-				alert("ÎÄ¼şÒÑ¾­´æÔÚ");
+				alert("æ–‡ä»¶å·²ç»å­˜åœ¨");
 			} 
 			else 
 			{
 				move_uploaded_file($_FILES["file"]["tmp_name"], "upload/" . $_FILES["file"]["name"]);
-				//ÎÄ¼ş´æ´¢ÔÚ"upload/".$_FILES["file"]["name"]
-				alert("ÉÏ´«³É¹¦");
+				//æ–‡ä»¶å­˜å‚¨åœ¨"upload/".$_FILES["file"]["name"]
+				alert("ä¸Šä¼ æˆåŠŸ");
 			}
 		}
 	}
 	else
 	{
-		alert("ÎÄ¼şÀàĞÍ²»Ö§³Ö");
+		alert("æ–‡ä»¶ç±»å‹ä¸æ”¯æŒ");
 	}
 }
 
 CheckLogin();
-//echoÒ»¸öÉÏ´«½çÃæÈÃÓÃ»§´«£¬Ö®Ç°ÄÇ¸öºÃÏñÓĞÃ«²¡
+//echoä¸€ä¸ªä¸Šä¼ ç•Œé¢è®©ç”¨æˆ·ä¼ ï¼Œä¹‹å‰é‚£ä¸ªå¥½åƒæœ‰æ¯›ç—…
 echo "<html>
     <head>
         <link rel="stylesheet" type="text/css" href="upload.css">
@@ -116,11 +116,12 @@ a{display:inline-block; width:450px; height:80px; background-image:url(./upload_
         </center>
     </body>
 </html>";
+
 upload();
-//»ñÈ¡Ä¿Ç°Ê±¼ä£¬ÓëÉÏ´«ÎÄ¼şÃûÒ»Í¬Ğ´Èëtime.ini
-$time=date(¡®y-m-d h:i:s¡¯,time());
+//è·å–ç›®å‰æ—¶é—´ï¼Œä¸ä¸Šä¼ æ–‡ä»¶åä¸€åŒå†™å…¥time.ini
+$time=date(â€˜y-m-d h:i:sâ€™,time());
 $iniarr=parse_ini_file(dirname(__FILE__).'/time.ini',false);
 $iniarr[$_FILES["file"]["name"]]=$time;
 write_ini_file($iniarr,dirname(__FILE__).'/time.ini',false);
-//Ñ¯ÎÊÓÃ»§ÊÇ·ñÁ¢¼´¸üĞÂ²©¿Í£¬Èç¹ûÊÇÌø×ªµ½generate.php
+//è¯¢é—®ç”¨æˆ·æ˜¯å¦ç«‹å³æ›´æ–°åšå®¢ï¼Œå¦‚æœæ˜¯è·³è½¬åˆ°generate.php
 
