@@ -88,7 +88,7 @@ body {
         background-color: #666666;
         background-image:url(./upload_index_img/bg.jpeg);
         margin-top: 400px;
-        
+
         /*-webkit-text-size-adjust:none;*/
         }   
         </style>

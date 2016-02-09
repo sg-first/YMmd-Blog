@@ -12,7 +12,7 @@ function ValidaPassword($password)
 
 function CheckLogin()
 {
-	if(!isset($_SESSION['userid']))
+	if(!isset($_SESSION['password']))
 	{
 		header("Location:login.html");  
 		exit();
@@ -22,8 +22,7 @@ function CheckLogin()
 //在上传和主页生成界面里都有登出按钮
 function LoginOut()
 {
-	unset($_SESSION['userid']);
-    unset($_SESSION['password']); 
+	unset($_SESSION['password']);
     echo '注销登录成功';  
     exit;
 }
