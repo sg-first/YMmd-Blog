@@ -3,11 +3,15 @@ function ValidaPassword($password)
 {
 	$filename = dirname(__FILE__).'/'.$password.'.pw';
 	$handle = fopen($filename, "r");
-	$contents = fread($handle, filesize ($filename)); //Í¨¹ıfilesize»ñµÃÎÄ¼ş´óĞ¡£¬½«Õû¸öÎÄ¼şÒ»ÏÂ×Ó¶Áµ½Ò»¸ö×Ö·û´®ÖĞ
+	$contents = fread($handle, filesize ($filename)); //é€šè¿‡filesizeè·å¾—æ–‡ä»¶å¤§å°ï¼Œå°†æ•´ä¸ªæ–‡ä»¶ä¸€ä¸‹å­è¯»åˆ°ä¸€ä¸ªå­—ç¬¦ä¸²ä¸­
 	fclose($handle);
 
 	if($contents!==$password)
-	{exit('Password error');}
+	{
+        //exit('Password error');
+        return false;
+    }
+    return true;
 }
 
 function CheckLogin()
@@ -15,14 +19,15 @@ function CheckLogin()
 	if(!isset($_SESSION['password']))
 	{
 		header("Location:login.html");  
-		exit();
+		return false;
 	}
+	return true;
 }
 
-//ÔÚÉÏ´«ºÍÖ÷Ò³Éú³É½çÃæÀï¶¼ÓĞµÇ³ö°´Å¥
+//åœ¨ä¸Šä¼ å’Œä¸»é¡µç”Ÿæˆç•Œé¢é‡Œéƒ½æœ‰ç™»å‡ºæŒ‰é’®
 function LoginOut()
 {
 	unset($_SESSION['password']);
-    echo '×¢ÏúµÇÂ¼³É¹¦';  
+    echo 'æ³¨é”€ç™»å½•æˆåŠŸ';  
     exit;
 }
