@@ -1,43 +1,7 @@
 <?php
 require_once dirname(__FILE__) . '/help/system.php';
-require_once dirname(__FILE__) . '/help/ini.php';
-require_once dirname(__FILE__) . '/help/webpage.php';
 
-function upload()
-{
-	if (($_FILES["file"]["type"] == "image/gif")
-	|| ($_FILES["file"]["type"] == "image/jpeg")
-	|| ($_FILES["file"]["type"] == "image/pjpeg")
-	|| ($_FILES["file"]["type"] == "text/plain")
-	&& ($_FILES["file"]["size"] < 10485760))
-	{
-		if ($_FILES["file"]["error"] > 0)
-		{
-			alert("文件错误");
-		} 
-		else 
-		{
-			if (file_exists("upload/" . $_FILES["file"]["name"])) 
-			{
-				alert("文件已经存在");
-			} 
-			else 
-			{
-				move_uploaded_file($_FILES["file"]["tmp_name"], "upload/" . $_FILES["file"]["name"]);
-				//文件存储在"upload/".$_FILES["file"]["name"]
-				alert("上传成功");
-			}
-		}
-	}
-	else
-	{alert("文件类型不支持");}
-}
-
-if (CheckLogin())
-{
-    alert("你已登录");
-    exitPage();
-}
+//CheckLogin();
 
 //echo一个上传界面让用户传，之前那个好像有毛病
 echo "<html>
@@ -61,7 +25,7 @@ a{display:inline-block; width:450px; height:80px; background-image:url(./upload_
     <body>
         <center>
             <div>
-                <form action='upload.php' method='post' enctype='multipart/form-data'>
+                <form action='uploadA.php' method='post' enctype='multipart/form-data'>
                     <ol>
                         <li>
                             <a><input type='file' value='file'></a>
@@ -75,11 +39,4 @@ a{display:inline-block; width:450px; height:80px; background-image:url(./upload_
         </center>
     </body>
 </html>";
-
-upload();
-//获取目前时间，与上传文件（日志）名一同写入time.ini（time.ini在主页生成时用）
-$time=date('y-m-d h:i:s',time());
-$name=$_FILES["file"]["name"];
-write_ini_file(dirname(__FILE__).'/time.ini',"time",$name,$time);
-//询问用户是否立即更新博客，如果是跳转到generate.php
 

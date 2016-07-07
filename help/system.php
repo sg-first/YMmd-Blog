@@ -14,14 +14,13 @@ function ValidaPassword($password)
     return true;
 }
 
+//如果没登录直接跳到登录界面
 function CheckLogin()
 {
 	if(!isset($_SESSION['password']))
 	{
-		header("Location:login.html");  
-		return false;
+		header("Location:login.html");
 	}
-	return true;
 }
 
 //在上传和主页生成界面里都有登出按钮
