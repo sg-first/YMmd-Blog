@@ -1,10 +1,10 @@
 <?php
 # Markdown文本转HTML-Markdown解释器
-# Copyright (c) 2004-2015 Michel Fortin 
-
-require_once dirname(__FILE__).'/MarkdownInterface.php';
+# Copyright (c) 2004-2015 Michel Fortin
 
 namespace Michelf;
+
+require_once dirname(__FILE__).'/MarkdownInterface.php';
 
 # Markdown Parser Class
 class Markdown implements MarkdownInterface {
