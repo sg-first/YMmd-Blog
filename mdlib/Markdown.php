@@ -4,10 +4,8 @@
 
 namespace Michelf;
 
-require_once dirname(__FILE__).'/MarkdownInterface.php';
-
 # Markdown Parser Class
-class Markdown implements MarkdownInterface {
+class Markdown {
 
 	### Version ###
 

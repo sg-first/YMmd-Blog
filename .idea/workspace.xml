@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a02efb9-d9df-4c50-9ac3-52ac885e8a4b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Markdown.inc.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/Markdown.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/MarkdownExtra.inc.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/MarkdownExtra.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/lib/MarkdownInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/mdlib/MarkdownInterface.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate.php" afterPath="$PROJECT_DIR$/generate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib.php" afterPath="$PROJECT_DIR$/lib.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mdlib/Markdown.php" afterPath="$PROJECT_DIR$/mdlib/Markdown.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uploadA.php" afterPath="$PROJECT_DIR$/uploadA.php" />
     </list>
     <ignored path="YMmd Blog.iws" />
@@ -60,28 +54,28 @@
       <file leaf-file-name="uploadA.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uploadA.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="588">
+              <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lib.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="lib.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            <state relative-caret-position="252">
+              <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Markdown.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Markdown.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mdlib/Markdown.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state relative-caret-position="189">
+              <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -90,18 +84,8 @@
       <file leaf-file-name="MarkdownExtra.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mdlib/MarkdownExtra.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MarkdownInterface.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mdlib/MarkdownInterface.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="42">
+              <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -173,7 +157,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -222,7 +206,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -279,12 +263,13 @@
       <workItem from="1468032737745" duration="3280000" />
       <workItem from="1468245852543" duration="3492000" />
       <workItem from="1468333098884" duration="2623000" />
-      <workItem from="1468249411412" duration="19000" />
+      <workItem from="1468249411412" duration="474000" />
+      <workItem from="1468415661123" duration="1181000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11985000" />
+    <option name="totallyTimeSpent" value="13621000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -360,6 +345,60 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib.php">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mdlib/Markdown.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mdlib/MarkdownExtra.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/upload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="16" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding>
+            <marker date="1468036150532" expanded="true" signature="115:1413" ph="..." />
+            <marker date="1468036150532" expanded="true" signature="126:844" ph="..." />
+            <marker date="1468036150532" expanded="true" signature="315:475" ph="..." />
+            <marker date="1468036150532" expanded="true" signature="326:456" ph="{...}" />
+            <marker date="1468036150532" expanded="true" signature="507:808" ph="..." />
+            <marker date="1468036150532" expanded="true" signature="855:1405" ph="..." />
+            <marker date="1468036150532" expanded="true" signature="872:1393" ph="..." />
+            <marker date="1468036150532" expanded="true" signature="873:1376" ph="..." />
+            <marker date="1468036150532" expanded="true" signature="890:1375" ph="..." />
+            <marker date="1468036150532" expanded="true" signature="978:1356" ph="..." />
+            <marker date="1468036150532" expanded="true" signature="1003:1332" ph="..." />
+            <marker date="1468036150532" expanded="true" signature="1032:1130" ph="..." />
+            <marker date="1468036150532" expanded="true" signature="1159:1306" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uploadA.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
           <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
           <folding />
@@ -382,14 +421,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mdlib/MarkdownInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/mdlib/MarkdownInterface.php" />
     <entry file="file://$PROJECT_DIR$/uploadA.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -501,6 +533,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Markdown.inc.php" />
+    <entry file="file://$PROJECT_DIR$/lib/MarkdownExtra.inc.php" />
+    <entry file="file://$PROJECT_DIR$/help/system.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/Markdown.php" />
+    <entry file="file://$PROJECT_DIR$/lib/MarkdownInterface.php" />
+    <entry file="file://$PROJECT_DIR$/generate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mdlib/MarkdownInterface.php" />
     <entry file="file://$PROJECT_DIR$/upload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -523,60 +574,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Markdown.inc.php" />
-    <entry file="file://$PROJECT_DIR$/lib/MarkdownExtra.inc.php" />
-    <entry file="file://$PROJECT_DIR$/help/system.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/Markdown.php" />
-    <entry file="file://$PROJECT_DIR$/lib/MarkdownInterface.php" />
-    <entry file="file://$PROJECT_DIR$/generate.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/uploadA.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mdlib/Markdown.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state relative-caret-position="588">
+          <caret line="28" column="9" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mdlib/MarkdownExtra.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="42">
+          <caret line="2" column="40" selection-start-line="2" selection-start-column="40" selection-end-line="2" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mdlib/MarkdownInterface.php">
+    <entry file="file://$PROJECT_DIR$/mdlib/Markdown.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="189">
+          <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
           <folding />
         </state>
       </provider>

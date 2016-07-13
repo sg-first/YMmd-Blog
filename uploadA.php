@@ -4,9 +4,7 @@ require_once dirname(__FILE__) . '/help/webpage.php';
 
 function upload()
 {
-    if (($_FILES["file"]["type"] == "image/gif")
-        || ($_FILES["file"]["type"] == "image/jpeg")
-        || ($_FILES["file"]["type"] == "image/pjpeg")
+    if (($_FILES["file"]["type"] == "image/jpeg")
         || ($_FILES["file"]["type"] == "text/plain")
         && ($_FILES["file"]["size"] < 10485760))
     {
@@ -37,6 +35,10 @@ function upload()
     }
 }
 
+//调试一下
+alert($_FILES["file"]["type"]);
+alert($_FILES["file"]["name"]);
+//就这些
 upload();
 //获取目前时间，与上传文件（日志）名一同写入time.ini（time.ini在主页生成时用）
 $time=date_default_timezone_set('Asia/Shanghai');
