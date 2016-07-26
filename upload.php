@@ -6,6 +6,7 @@ CheckLogin();
 
 <html>
     <head>
+        <title>YMmd Blog - 更新博客</title>
         <link rel='stylesheet' type='text/css' href='upload.css'>
         <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
         <style type='text/css' media='screen'>

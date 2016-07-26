@@ -4,7 +4,7 @@ require_once dirname(__FILE__).'/help/system.php';
 require_once dirname(__FILE__).'/mdlib/indexGener.php';
 require_once dirname(__FILE__).'/help/webpage.php';
 
-//CheckLogin();
+CheckLogin();
 $mydir = dir(dirname(__FILE__).'/journal/');
 
 //开始把所有markdown生成HTML

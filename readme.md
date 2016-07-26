@@ -4,4 +4,10 @@ Blog YMmd is a blog system based on php-markdown, it can use markdown syntax to 
 
 Present situation
 -----------------------------------
-At present we are writing the part of that automatic generation home page according to the MD files in the catalog. And the page is used to upload MD files 
+Basic has been completed, we need to index template, blog template, upload interface and login interface
+
+Key file description
+-----------------
+* generate.php: be called when you update your blog
+* upload.php: Upload file interface
+* login.php: be called when incoming login information

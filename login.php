@@ -9,16 +9,18 @@ if(!isset($_POST['submit'])) //判断是否有表单提交
 
 $password = $_POST['password'];
 ValidaPassword($password);
-//登录成功
+
+//没exit掉就是登录成功
 session_start();  
-$_SESSION['password'] = $password;  
+$_SESSION['password'] = $password;
+
 //查看登陆行为
 $action = $_POST['action'];
 if($action==='upload')
 {
-	header("Location:upload.php");
+	tourl("upload.php");
 }
 if($action==='generate')
 {
-	header("Location:generate.php");
+    tourl("generate.php");
 }
