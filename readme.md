@@ -4,7 +4,7 @@ Blog YMmd is a blog system based on php-markdown, it can use markdown syntax to 
 
 Present situation
 -----------------------------------
-Basic has been completed, we need to index template, blog template, upload interface and login interface
+Basically completed, we need index template, blog template, upload interface and login interface.
 
 Key file description
 -----------------
