@@ -19,7 +19,7 @@ function CheckLogin()
 {
 	if(!isset($_SESSION['password']))
 	{
-		header("Location:login.html");
+		header("Location:login.htm");
 	}
 }
 
