@@ -7,30 +7,27 @@ namespace Michelf;
 # Markdown Parser Class
 class Markdown {
 
-	### Version ###
-
 	const  MARKDOWNLIB_VERSION  =  "1.5.0";
 
-	### Simple Function Interface ###
+	### 简单的函数接口 ###
 
-	public static function defaultTransform($text) {
-	#
-	# Initialize the parser and return the result of its transform method.
-	# This will work fine for derived classes too.
-	#
-		# Take parser class on which this function was called.
-		$parser_class = \get_called_class();
+	public static function defaultTransform($text,$font=null) { #初始化解析器，并返回其变换方法的结果
 
-		# try to take parser from the static parser list
+		$parser_class = \get_called_class(); #取此函数调用的解析器类
+		# 尝试从静态分析器列表中取分析器
 		static $parser_list;
 		$parser =& $parser_list[$parser_class];
-
-		# create the parser it not already set
+		# 创建没有设置的解析器
 		if (!$parser)
 			$parser = new $parser_class;
+		# 用解析器翻译文本
+		$code=$parser->transform($text);
+        # 插入字体
+        if($font!=null) {
+            $code="<style type=\'text/css\'>body{font-family".$font.";}</style>".$code;
+        }
 
-		# Transform text using parser.
-		return $parser->transform($text);
+        return $code;
 	}
 
 	### Configuration Variables ###

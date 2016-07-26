@@ -1,6 +1,7 @@
 <?php
 require_once dirname(__FILE__) . '/help/ini.php';
 require_once dirname(__FILE__) . '/help/webpage.php';
+header("Content-Type: text/html; charset=utf-8");
 
 function upload()
 {
@@ -22,8 +23,8 @@ function upload()
             }
             else
             {
-                move_uploaded_file($_FILES["file"]["tmp_name"], "upload/" . $_FILES["file"]["name"]);
-                //文件存储在"upload/".$_FILES["file"]["name"]
+                move_uploaded_file($_FILES["file"]["tmp_name"], "jpurnal/".$_FILES["file"]["name"]);
+                //文件存储在journal文件夹中
                 alert("上传成功 3");
             }
         }

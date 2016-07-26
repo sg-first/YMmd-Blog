@@ -1,10 +1,10 @@
 <?php
 require_once dirname(__FILE__) . '/help/system.php';
+header("Content-Type: text/html; charset=utf-8");
+CheckLogin();
+?>
 
-//CheckLogin();
-
-//echo一个上传界面让用户传，之前那个好像有毛病
-echo "<html>
+<html>
     <head>
         <link rel='stylesheet' type='text/css' href='upload.css'>
         <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
@@ -38,5 +38,5 @@ a{display:inline-block; width:450px; height:80px; background-image:url(./upload_
             </div>
         </center>
     </body>
-</html>";
+</html>
 
