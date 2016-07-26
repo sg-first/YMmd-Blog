@@ -49,23 +49,19 @@ write_ini_file(dirname(__FILE__).'/time.ini',"time",$name,$time);
     <meta charset="utf-8">
     <title>YMmd Blog - 更新博客</title>
 
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
-    <script src="//code.jquery.com/jquery-1.9.1.js"></script>
-    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script>
         $(function() { //主选择器
             $("button#yes").click(
-                function(event)
-                {
-                    window.location.href="generate.php";
-                });
+                    function(event)
+                    {
+                        window.location.href="generate.php";
+                    });
             $("button#no").click(
-                function(event)
-                {
-                    window.location.href="index.htm";
-                });
+                    function(event)
+                    {
+                        window.location.href="index.htm";
+                    });
         });
     </script>
 </head>
